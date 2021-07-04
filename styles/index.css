@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+body,
+html {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+/*-------------- common css styles start------------- */
+.d-flex {
+  display: flex;
+}
+.section {
+  padding-top: 90px;
+  padding-bottom: 30px;
+}
+.container {
+  width: 1200px;
+  margin: auto;
+}
+.section-wrapper {
+  overflow: hidden;
+}
+/*-------------- common css styles end------------- */
+
+/*---------------- Header styles start-------------- */
+.header-wrapper {
+  overflow: hidden;
+  justify-content: space-between;
+}
+ul.nav-list-group li {
+  list-style: none;
+  margin-right: 35px;
+  font-size: 20px;
+}
+
+ul.nav-list-group li a {
+  text-decoration: none;
+  color: black;
+  padding: 40px 0px;
+  font-weight: 600;
+  transition: 0.5s;
+}
+ul.nav-list-group li a:hover {
+  background: linear-gradient(120deg, crimson, blue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+header {
+  padding: 30px 0px;
+  background: rgba(0, 255, 255, 0);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: 0.5s;
+}
+.sticky {
+  padding: 10px 0px;
+  background: white;
+  z-index: 99999;
+}
+.logo img {
+  width: 57px;
+  margin-left: 50px;
+}
+
+nav.navbar {
+  margin-left: 50px;
+  line-height: 60px;
+}
+.header-icons {
+  margin-right: 50px;
+}
+
+.header-icons a {
+  margin: 0px 15px;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  transition: 0.3s;
+  line-height: 59px;
+}
+
+.header-btn a {
+  padding: 16px 36px;
+  margin-right: 50px;
+  border-radius: 26px;
+  border: 2px solid rgb(37, 37, 37);
+  letter-spacing: 2px;
+  line-height: 59px;
+  font-size: 15px;
+  text-decoration: none;
+  color: black;
+  transition: 0.3s;
+  outline: none;
+}
+
+.header-btn a:hover {
+  background: crimson;
+  color: white;
+  border: 2px solid crimson;
+}
+.header-icons a:hover {
+  color: crimson;
+  line-height: 50px;
+}
+/*---------------- Header styles end-------------- */
+
+/*------------- top section styles start------------ */
+
+.top-section {
+  background-image: url(../my-images/my-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: 100vh;
+  height: 800px;
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+}
+.top-sec-content h5 {
+  font-size: 18px;
+}
+
+.top-sec-content h1 {
+  font-size: 60px;
+  margin: 20px 0;
+  font-weight: 900;
+}
+
+.top-sec-content h1 span {
+  color: crimson;
+}
+
+.top-sec-content p {
+  width: 516px;
+  color: #3a3a3a;
+  line-height: 26px;
+  margin-bottom: 50px;
+}
+
+.top-sec-content a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  background: crimson;
+  padding: 20px 30px;
+  border-radius: 30px;
+  border: 2px solid crimson;
+  transition: 0.3s;
+}
+
+.top-sec-content a:hover {
+  background: transparent;
+  color: crimson;
+  border: 2px solid crimson;
+}
+/*------------- top section styles end------------ */
+
+/* ------------ about section styles start-------- */
+.about-left {
+  width: 82%;
+  position: relative;
+  margin-left: 20px;
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+
+.about-left img {
+  width: 100%;
+  height: 760px;
+  border-radius: 10px;
+  /* padding-bottom: 30px; */
+}
+
+.about-content {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-right {
+  margin-left: 50px;
+}
+
+.about-left:before {
+  position: absolute;
+  content: "";
+  top: -20px;
+  left: -20px;
+  border-radius: 10px;
+  width: 100%;
+  height: 760px;
+  background: linear-gradient(50deg, skyblue, crimson, steelblue);
+  box-shadow: 21px 21px 11px 6px grey;
+  z-index: -1;
+}
+.about-right-top h4 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  background: linear-gradient(120deg, crimson 10.36%, blue, green);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about-right-top h1 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.about-right-top p {
+  font-size: 20px;
+  line-height: 30px;
+  color: grey;
+  margin-bottom: 50px;
+}
+
+.about-right-buttom {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.single-content {
+  width: 50%;
+}
+
+.single-content {
+  margin: 35px 0px;
+}
+
+.single-content h4 {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.single-content p {
+  letter-spacing: 1px;
+  font-size: 17px;
+  color: grey;
+  width: 80%;
+  line-height: 30px;
+}
+.about-right {
+  width: 100%;
+}
+/* ------------ about section styles end-------- */
